@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="320dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/drop_down_weather_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_weather_state"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/hazy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/snowy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/clear"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/cloudy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/foggy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/icy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/rainy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/stormy"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_weather_tv_option9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/windy"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

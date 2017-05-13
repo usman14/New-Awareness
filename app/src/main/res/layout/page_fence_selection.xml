@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.15"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.15"
+
+        android:id="@+id/page_fence_selection_relativelayout_name"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:layout_marginStart="30dp"
+            android:id="@+id/page_fence_selection_tv_name"
+            android:text="@string/situationname"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/page_fence_selection_tv_name"
+            android:id="@+id/page_fence_selection_tv_name1"/>
+    </RelativeLayout>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.27"
+        app:layout_constraintGuide_percent="0.27"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/page_fence_selection_relativelayout_name"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        android:id="@+id/page_fence_selection_relativelayout_headphone"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/page_fence_selection_img_view_headphone_one"
+            android:layout_width="@dimen/relativelayout_headphone_width"
+            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
+            android:background="@drawable/headphone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:id="@+id/page_fence_selection_tv_headphone"
+            android:layout_marginBottom="@dimen/relativelayout_headphone_tv_bottommargin"
+            android:layout_alignBottom="@id/page_fence_selection_img_view_headphone_one"
+            android:layout_toRightOf="@+id/page_fence_selection_img_view_headphone_one"
+            android:text="@string/headphone_state"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_state"
+            android:textColor="@color/green"
+            android:layout_alignStart="@+id/page_fence_selection_tv_headphone"
+            android:layout_below="@+id/page_fence_selection_tv_headphone"
+            android:id="@+id/page_fence_selection_tv_headphone1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/page_fence_selection_tv_headphone1"
+            android:layout_height="@dimen/relativelayout_headphone_extra" />
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.39"
+        app:layout_constraintGuide_percent="0.39"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/page_fence_selection_relativelayout_headphone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.39"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        android:background="@color/blue"
+        android:id="@+id/page_fence_selection_relativelayout_weather">
+
+        <ImageView
+            android:id="@+id/page_fence_selection_img_view_weather_one"
+            android:layout_width="@dimen/relativelayout_headphone_width"
+            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
+
+            android:background="@drawable/weather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/relativelayout_headphone_tv_bottommargin"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:layout_alignBottom="@id/page_fence_selection_img_view_weather_one"
+            android:layout_marginStart="20dp"
+            android:id="@+id/page_fence_selection_tv_weather"
+            android:layout_toRightOf="@+id/page_fence_selection_img_view_weather_one"
+            android:text="@string/weather_state"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/page_fence_selection_tv_weather"
+            android:text="@string/choose_state"
+            android:textColor="@color/green"
+
+            android:layout_below="@+id/page_fence_selection_tv_weather"
+            android:id="@+id/page_fence_selection_tv_weather1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/page_fence_selection_tv_weather1"
+            android:layout_height="@dimen/relativelayout_headphone_extra" />
+    </RelativeLayout>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.51"
+        app:layout_constraintGuide_percent="0.51"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_0.39"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.51"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        android:background="@color/blue"
+        android:id="@+id/page_fence_selection_relativelayout_location">
+
+        <ImageView
+
+            android:id="@+id/page_fence_selection_img_view_location_one"
+            android:layout_width="@dimen/relativelayout_headphone_width"
+            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
+            android:background="@drawable/location" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:textSize="@dimen/text_size"
+
+            android:layout_marginBottom="@dimen/relativelayout_headphone_tv_bottommargin"
+            android:layout_alignBottom="@id/page_fence_selection_img_view_location_one"
+            android:id="@+id/page_fence_selection_tv_location"
+            android:layout_toRightOf="@+id/page_fence_selection_img_view_location_one"
+            android:text="@string/location_fence"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_state"
+            android:textColor="@color/green"
+
+            android:layout_alignStart="@+id/page_fence_selection_tv_location"
+            android:layout_below="@+id/page_fence_selection_tv_location"
+            android:id="@+id/page_fence_selection_tv_location1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/page_fence_selection_tv_location1"
+            android:layout_height="@dimen/relativelayout_headphone_extra" />
+    </RelativeLayout>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.63"
+        app:layout_constraintGuide_percent="0.63"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_0.51"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.63"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        android:background="@color/blue"
+        android:id="@+id/page_fence_selection_relativelayout_activity"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <ImageView
+            android:id="@+id/page_fence_selection_img_view_activity_one"
+            android:layout_width="@dimen/relativelayout_headphone_width"
+            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:background="@drawable/activity" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+
+            android:textColor="@color/whites"
+            android:layout_marginStart="20dp"
+            android:id="@+id/page_fence_selection_tv_activity"
+            android:layout_toEndOf="@+id/page_fence_selection_img_view_activity_one"
+            android:text="@string/physical_state"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_state"
+            android:textColor="@color/green"
+
+            android:layout_alignStart="@+id/page_fence_selection_tv_activity"
+            android:layout_below="@+id/page_fence_selection_tv_activity"
+            android:id="@+id/page_fence_selection_tv_activity1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/page_fence_selection_tv_activity1"
+            android:layout_height="@dimen/relativelayout_headphone_extra" />
+    </RelativeLayout>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.78"
+        app:layout_constraintGuide_percent="0.78"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_0.63"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.78"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        android:background="@color/blue"
+        android:id="@+id/page_fence_selection_relativelayout_time">
+
+        <ImageView
+            android:id="@+id/page_fence_selection_img_view_time_one"
+            android:layout_width="@dimen/relativelayout_headphone_width"
+            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
+            android:background="@drawable/calendern" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:id="@+id/page_fence_selection_tv_time"
+            android:layout_toRightOf="@+id/page_fence_selection_img_view_time_one"
+            android:text="@string/time_state"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_fence_selection_btn_date"
+            android:layout_toEndOf="@id/page_fence_selection_tv_time"
+            android:text="@string/date"
+            android:textColor="@color/whites"
+
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_fence_selection_btn_time"
+            android:layout_toEndOf="@id/page_fence_selection_btn_date"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:layout_marginStart="10dp"
+            android:text="@string/time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+
+            android:layout_alignRight="@+id/page_fence_selection_tv_time"
+            android:layout_below="@+id/page_fence_selection_btn_date"
+            android:id="@+id/page_fence_selection_tv_time1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+
+            android:layout_toEndOf="@id/page_fence_selection_tv_time1"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/page_fence_selection_btn_date"
+
+            android:id="@+id/page_fence_selection_tv_time2"/>
+
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.87"
+        app:layout_constraintGuide_percent="0.87"
+        android:orientation="horizontal" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_0.78"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_0.87"
+        android:id="@+id/page_fence_selection_btn_action"
+        android:text="@string/select_action"
+        android:background="@color/green"
+        android:layout_gravity="right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_0.85"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="horizontal" />
+    <TextView
+        android:layout_width="0dp"
+        app:layout_goneMarginTop="@dimen/relativelayout_headphone_margintop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_0.87"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0dp"
+        android:minHeight="50dp"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/whites"
+        android:id="@+id/page_fence_selection_tv_action"
+        android:background="@color/blue"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

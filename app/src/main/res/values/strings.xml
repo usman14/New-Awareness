@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">New Awareness</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="use_this_location">Do you want to use this location?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title1">New Awarenss is an intellignet tool based on Awareness API.It performs a certain function when the assigned conditions are fulfilled</string>
+    <string name="google_play_services_key">AIzaSyD4x7kdqo2p4cTdl9IBEML-k5HMOvoZHZY</string>
+    <string name="situationname">Situation Name</string>
+    <string name="headphone_state">Headphone State</string>
+    <string name="choose_state">Choose State</string>
+    <string name="weather_state">Weather State</string>
+    <string name="location_fence">location State</string>
+    <string name="physical_state">Physical Activity State</string>
+    <string name="time_state">Time State</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="select_action">SELECT ACTION</string>
+    <string name="save">Save</string>
+    <string name="select_headphone_state">Select Headphone State</string>
+    <string name="plugged_in">Plugged In</string>
+    <string name="plugged_out">Plugged Out</string>
+    <string name="select_physical_state">Select Physical Activity State</string>
+    <string name="still">Still</string>
+    <string name="walking">Walking</string>
+    <string name="running">Running</string>
+    <string name="on_foot">On Foot</string>
+    <string name="tilting">Tilting</string>
+    <string name="on_bicycle">On Bicycle</string>
+    <string name="in_vehicle">In Vehicle</string>
+    <string name="select_weather_state">Select Weather State</string>
+    <string name="hazy">Hazy</string>
+    <string name="snowy">Snowy</string>
+    <string name="clear">Clear</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="foggy">Foggy</string>
+    <string name="icy">Icy</string>
+    <string name="rainy">Rainy</string>
+    <string name="stormy">Stormy</string>
+    <string name="windy">Windy</string>
+    <string name="search_location_here">Search Location Here</string>
+    <string name="search">Search</string>
+    <string name="use_current_location">Use Current Location</string>
+
+</resources>

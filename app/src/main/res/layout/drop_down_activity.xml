@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="320dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/drop_down_weather_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_physical_state"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/still"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/walking"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/running"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/on_foot"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/tilting"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/on_bicycle"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/drop_down_activity_tv_option7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/in_vehicle"
+        android:textSize="15dp" />
+
+
+
+</LinearLayout>

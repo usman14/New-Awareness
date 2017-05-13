@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textviewheight">10dp</dimen>
+    <dimen name="relativelayoutleft">5dp</dimen>
+    <dimen name="relativelayout_headphone_width">25dp</dimen>
+    <dimen name="relativelayout_headphone_height">32dp</dimen>
+    <dimen name="relativelayout_headphone_margintop">7dp</dimen>
+    <dimen name="relativelayout_headphone_imageview_topmargin">4dp</dimen>
+    <dimen name="relativelayout_headphone_tv_bottommargin">3dp</dimen>
+    <dimen name="relativelayout_headphone_extra">5dp</dimen>
+    <dimen name="text_size">15dp</dimen>
+    <dimen name="textview_extra_height">8dp</dimen>
+    <dimen name="marginleft">8dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+
+</resources>

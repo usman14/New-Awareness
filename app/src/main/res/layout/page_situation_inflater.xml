@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_marginLeft="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginRight="5dp"
+
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/page_situation_inflater_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/whites"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_situation_inflater_tv"
+        android:paddingStart="@dimen/relativelayoutleft"
+        android:id="@+id/rl_headphone">
+
+        <ImageView
+            android:id="@+id/img_headphone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/headphone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_headphone"
+            android:layout_marginStart="@dimen/marginleft"
+            android:textColor="@color/whites"
+
+            android:id="@+id/tv_headphone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_extra_height"
+            android:layout_toEndOf="@id/img_headphone"
+            android:id="@+id/tv_headphone1"
+            android:layout_below="@+id/tv_headphone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_headphone"
+        android:paddingLeft="@dimen/relativelayoutleft"
+
+        android:id="@+id/rl_weather">
+
+        <ImageView
+            android:id="@+id/img_weather"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/weather" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_weather"
+            android:layout_marginStart="@dimen/marginleft"
+            android:textColor="@color/whites"
+
+            android:id="@+id/tv_weather"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_extra_height"
+            android:layout_toEndOf="@id/img_weather"
+            android:id="@+id/tv_weather1"
+            android:layout_below="@+id/tv_weather"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_weather"
+        android:paddingStart="@dimen/relativelayoutleft"
+
+        android:id="@+id/rl_location">
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/img_location"
+            android:layout_marginStart="@dimen/marginleft"
+            android:textColor="@color/whites"
+
+            android:id="@+id/tv_location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_extra_height"
+            android:id="@+id/tv_location1"
+            android:layout_below="@+id/tv_location"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_location"
+        android:paddingStart="@dimen/relativelayoutleft"
+
+        android:id="@+id/rl_activity">
+
+        <ImageView
+            android:id="@+id/img_activity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/activity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_activity"
+            android:layout_marginStart="@dimen/marginleft"
+            android:textColor="@color/whites"
+
+            android:id="@+id/tv_activity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_extra_height"
+            android:id="@+id/tv_activity1"
+            android:layout_below="@+id/tv_activity"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_activity"
+        android:paddingStart="@dimen/relativelayoutleft"
+
+        android:id="@+id/rl_time">
+
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/calendern" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_time"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:textColor="@color/whites"
+
+            android:id="@+id/tv_time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_extra_height"
+            android:id="@+id/tv_time1"
+            android:textColor="@color/whites"
+            android:layout_below="@+id/tv_time"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/textview_extra_height"
+        android:id="@+id/tv_time1s"
+        android:layout_below="@+id/rl_time"/>
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_time">
+
+
+    </android.support.v7.widget.SwitchCompat>
+</RelativeLayout>
