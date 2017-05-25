@@ -30,6 +30,7 @@ import android.widget.ImageButton;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
+import com.codemybrainsout.placesearch.PlaceSearchDialog;
 import com.example.usman.newawareness.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -70,7 +71,7 @@ public class Activity_Maps extends FragmentActivity implements OnMapReadyCallbac
     private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
     private final static int REQUEST_PERMISSION_RESULT_CODE = 42;
     private Handler mHandler = new Handler();
-
+    String g;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,7 +106,6 @@ public class Activity_Maps extends FragmentActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
         Click_Listeners();
 
-
     }
 
     public void Click_Listeners() {
@@ -134,29 +134,39 @@ public class Activity_Maps extends FragmentActivity implements OnMapReadyCallbac
 
     protected void search() {
 
-        String g = edt_search.getText().toString();
 
-        List<Address> addressList = null;
+        PlaceSearchDialog placeSearchDialog = new PlaceSearchDialog.Builder(this)
+                .setLocationNameListener(new PlaceSearchDialog.LocationNameListener() {
+                    @Override
+                    public void locationName(String locationName) {
+                       g=locationName;
+                        List<Address> addressList = null;
 
-        if (g != null || !g.equals("")) {
-            Geocoder geocoder = new Geocoder(this);
-            try {
-                addressList = geocoder.getFromLocationName(g, 1);
+                        if (g != null || !g.equals("")) {
+                            Geocoder geocoder = new Geocoder(Activity_Maps.this);
+                            try {
+                                addressList = geocoder.getFromLocationName(g, 3);
 
-            } catch (IOException e) {
-                //e.printStackTrace();
-            }
-            if(addressList!=null)
-            {
-                Address address = addressList.get(0);
-                LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
-                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker"));
-                mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-                mMap.animateCamera(CameraUpdateFactory.zoomTo(5));
+                            } catch (IOException e) {
+                                //e.printStackTrace();
+                            }
+                            if(addressList!=null)
+                            {
+                                Address address = addressList.get(0);
+                                LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+                                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker"));
+                                mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+                                // mMap.animateCamera(CameraUpdateFactory.zoomTo(5));
 
-            }
+                            }
 
-        }
+                        }
+                    }
+                })
+                .build();
+        placeSearchDialog.show();
+
+
 
     }
     @Override

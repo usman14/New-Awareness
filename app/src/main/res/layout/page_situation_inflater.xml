@@ -100,17 +100,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@id/img_location"
+            android:layout_toEndOf="@id/img_location"
             android:layout_marginStart="@dimen/marginleft"
             android:textColor="@color/whites"
 
             android:id="@+id/tv_location"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/textview_extra_height"
-            android:id="@+id/tv_location1"
-            android:layout_below="@+id/tv_location"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"

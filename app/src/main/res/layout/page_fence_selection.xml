@@ -62,8 +62,8 @@
 
         <ImageView
             android:id="@+id/page_fence_selection_img_view_headphone_one"
-            android:layout_width="@dimen/relativelayout_headphone_width"
-            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_width="@dimen/img_view_width"
+            android:layout_height="@dimen/img_view_height"
             android:layout_marginStart="25dp"
             android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
             android:background="@drawable/headphone" />
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/txt_size_main_heading"
             android:textStyle="bold"
             android:textColor="@color/whites"
             android:id="@+id/page_fence_selection_tv_headphone"
@@ -106,15 +106,15 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline_0.39"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/relativelayout_headphone_margintop"
         android:background="@color/blue"
         android:id="@+id/page_fence_selection_relativelayout_weather">
 
         <ImageView
             android:id="@+id/page_fence_selection_img_view_weather_one"
-            android:layout_width="@dimen/relativelayout_headphone_width"
-            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_width="@dimen/img_view_width"
+            android:layout_height="@dimen/img_view_height"
             android:textStyle="bold"
             android:textColor="@color/whites"
             android:layout_marginStart="25dp"
@@ -125,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/relativelayout_headphone_tv_bottommargin"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/txt_size_main_heading"
             android:textStyle="bold"
             android:textColor="@color/whites"
             android:layout_alignBottom="@id/page_fence_selection_img_view_weather_one"
@@ -168,8 +168,8 @@
         <ImageView
 
             android:id="@+id/page_fence_selection_img_view_location_one"
-            android:layout_width="@dimen/relativelayout_headphone_width"
-            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_width="@dimen/img_view_width"
+            android:layout_height="@dimen/img_view_height"
             android:layout_marginStart="25dp"
             android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
             android:background="@drawable/location" />
@@ -179,7 +179,7 @@
             android:layout_marginStart="20dp"
             android:textStyle="bold"
             android:textColor="@color/whites"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/txt_size_main_heading"
 
             android:layout_marginBottom="@dimen/relativelayout_headphone_tv_bottommargin"
             android:layout_alignBottom="@id/page_fence_selection_img_view_location_one"
@@ -221,8 +221,8 @@
 
         <ImageView
             android:id="@+id/page_fence_selection_img_view_activity_one"
-            android:layout_width="@dimen/relativelayout_headphone_width"
-            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_width="@dimen/img_view_width"
+            android:layout_height="@dimen/img_view_height"
             android:layout_marginStart="25dp"
             android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
             android:textStyle="bold"
@@ -231,9 +231,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/txt_size_main_heading"
             android:textStyle="bold"
+            android:layout_alignBottom="@id/page_fence_selection_img_view_activity_one"
 
             android:textColor="@color/whites"
             android:layout_marginStart="20dp"
@@ -274,17 +274,17 @@
 
         <ImageView
             android:id="@+id/page_fence_selection_img_view_time_one"
-            android:layout_width="@dimen/relativelayout_headphone_width"
-            android:layout_height="@dimen/relativelayout_headphone_height"
+            android:layout_width="@dimen/img_view_width"
+            android:layout_height="@dimen/img_view_height"
             android:layout_marginStart="25dp"
             android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
             android:background="@drawable/calendern" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/page_fence_selection_img_view_time_one"
             android:layout_marginStart="20dp"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/txt_size_main_heading"
             android:textStyle="bold"
             android:textColor="@color/whites"
             android:id="@+id/page_fence_selection_tv_time"
@@ -293,26 +293,22 @@
             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:id="@+id/page_fence_selection_btn_date"
-            android:layout_toEndOf="@id/page_fence_selection_tv_time"
+            android:layout_toLeftOf="@+id/page_fence_selection_btn_time"
             android:text="@string/date"
             android:textColor="@color/whites"
-
-            android:layout_marginStart="10dp"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
+            android:layout_marginRight="10dp"
+          />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:id="@+id/page_fence_selection_btn_time"
-            android:layout_toEndOf="@id/page_fence_selection_btn_date"
-            android:textSize="16dp"
-            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
             android:textColor="@color/whites"
-            android:layout_marginStart="10dp"
             android:text="@string/time"/>
         <TextView
             android:layout_width="wrap_content"

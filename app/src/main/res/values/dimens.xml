@@ -12,5 +12,8 @@
     <dimen name="textview_extra_height">8dp</dimen>
     <dimen name="marginleft">8dp</dimen>
     <dimen name="dp40">40dp</dimen>
+    <dimen name="img_view_width">20dp</dimen>
+    <dimen name="img_view_height">20dp</dimen>
+    <dimen name="txt_size_main_heading">15dp</dimen>
 
 </resources>

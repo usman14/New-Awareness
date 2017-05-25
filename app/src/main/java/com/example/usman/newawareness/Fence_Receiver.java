@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
@@ -19,6 +20,8 @@ import com.google.android.gms.awareness.snapshot.WeatherResult;
 import com.google.android.gms.awareness.state.Weather;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
+
+import java.util.Random;
 
 import io.realm.Realm;
 
@@ -84,10 +87,15 @@ public class Fence_Receiver extends BroadcastReceiver {
                                 NotificationCompat.Builder builder =
                                         new NotificationCompat.Builder(context)
                                                 .setSmallIcon(R.drawable.common_google_signin_btn_icon_dark_disabled)
-                                                .setContentTitle("Notifications ")
-                                                .setContentText("Notifications Example");
+                                                .setContentTitle("New Awareness Notification")
+                                                .setContentText("Condition met for :  "+fence.getSituationname());
+                                builder.setVibrate(new long[] { 1000, 1000});
+                                builder.setSound(Settings.System.DEFAULT_NOTIFICATION_URI);
+                                Random random = new Random();
+                                int m = random.nextInt(9999 - 1000) + 1000;
                                 NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-                                manager.notify(1, builder.build());
+                                manager.notify(m, builder.build());
+
                             }
                             if (fence.getAppopen() != null) {
                                 Intent intent1 = packageManager.getLaunchIntentForPackage(fence.getAppname());

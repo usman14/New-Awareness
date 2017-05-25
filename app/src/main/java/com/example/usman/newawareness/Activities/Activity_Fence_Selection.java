@@ -217,7 +217,6 @@ public class Activity_Fence_Selection extends AppCompatActivity {
                         object_situation.setWeather_txt(items[item].toString());
                         editor.putString("weather", items[item].toString());
                         editor.putInt("weather_state", item + 1);
-
                         editor.apply();
 
                     }
@@ -572,5 +571,11 @@ public class Activity_Fence_Selection extends AppCompatActivity {
                 Log.i(TAG, "Fence " + fenceKey + " could NOT be removed.");
             }
         });
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        unregisterReceiver(myfencereceiver);
     }
 }
