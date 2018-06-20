@@ -66,7 +66,7 @@
             android:layout_height="@dimen/img_view_height"
             android:layout_marginStart="25dp"
             android:layout_marginTop="@dimen/relativelayout_headphone_imageview_topmargin"
-            android:background="@drawable/headphone" />
+            android:background="@mipmap/ic_launcher_one" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

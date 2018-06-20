@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
 
+
+def googleplayserviceskey = '"' + google_play_services_key + '"' ?: '"Define Your google play key"';
+def googleawarenesskey = '"' + google_awareness_key + '"' ?: '"Define Your awareness key"';
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -11,7 +14,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String" , "API_PLAY_SERVICES_KEY" ,  googleplayserviceskey
+        buildConfigField "String" , "API_AWARENESS_KEY" ,  googleawarenesskey
+        manifestPlaceholders = [API_PLAY_SERVICES_KEY          : googleplayserviceskey,
+                                API_AWARENESS_KEY              :   googleawarenesskey   ]
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
