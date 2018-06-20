@@ -43,7 +43,7 @@ package="com.example.usman.newawareness">
 
         <activity android:name=".Activities.Activity_Fence_Selection"
         android:hardwareAccelerated="false"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_icon"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
     </activity>
