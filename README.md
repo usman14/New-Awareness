@@ -3,7 +3,7 @@ Taking the Mobile Activity awareness to the next level. Make your mobile do thin
 
 
 <p align="center">
-  <img width="200" height="150" src="app/src/main/res/drawable/start_logo.png">
+  <img width="300" height="220" src="app/src/main/res/drawable/start_logo.png">
 </p>
 
 - Send you a notification if it is raining outside So you dont forget your umbrella.
@@ -20,7 +20,7 @@ architechture patterns and design ideas.
 
 <img src="app/src/main/res/drawable/one.png">
 <img src="app/src/main/res/drawable/two.png">
-<img src="app/src/main/res/drawable/three.png" >
+
 
 ## Services Employed
 
