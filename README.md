@@ -19,8 +19,14 @@ I developed this application  to practice my android development skills with the
 architechture patterns and design ideas.
 
 <img src="app/src/main/res/drawable/one.png">
+
+
 <img src="app/src/main/res/drawable/two.png">
 
+
+<p align="center">
+  <img width="500" height="700" src="app/src/main/res/drawable/three.png">
+</p>
 
 ## Services Employed
 
