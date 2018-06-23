@@ -1,5 +1,10 @@
-# NewAwareness
+# New Awareness
 Taking the Mobile Activity awareness to the next level. Make your mobile do things according to your desired situation response pair.
+
+
+<p align="center">
+  <img width="200" height="150" src="app/src/main/res/drawable/start_logo.png">
+</p>
 
 - Send you a notification if it is raining outside So you dont forget your umbrella.
 - Inform you when are just a few meters away from your destination.
@@ -13,6 +18,9 @@ A part of my learning at my first job, Google awareness API.
 I developed this application  to practice my android development skills with the aim to try new libraries, 
 architechture patterns and design ideas.
 
+<img src="app/src/main/res/drawable/one.png">
+<img src="app/src/main/res/drawable/two.png">
+<img src="app/src/main/res/drawable/three.png" >
 
 ## Services Employed
 
