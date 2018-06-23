@@ -38,7 +38,7 @@ architechture patterns and design ideas.
 - Material tap target library
 
 
- ##To use it
+ ## To use it
  
  
 - Retrieving data from Play Services API and Google Awareness API key.
