@@ -48,7 +48,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:context="com.example.usman.newawareness.Activities.Activity_Maps" />
+            tools:context="com.awareness.usman.newawareness.Activities.Activity_Maps" />
 
         <ImageButton
             android:layout_width="20dp"

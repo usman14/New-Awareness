@@ -1,4 +1,4 @@
-package com.example.usman.newawareness;
+package com.awareness.usman.newawareness;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -15,12 +15,12 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
+public class awarenessInstrumentedTest {
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.usman.newawareness", appContext.getPackageName());
+        assertEquals("com.awareness.usman.newawareness", appContext.getPackageName());
     }
 }

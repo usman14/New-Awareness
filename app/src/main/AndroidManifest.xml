@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.example.usman.newawareness">
+package="com.awareness.usman.newawareness">
 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.INTERNET" />
@@ -18,8 +18,9 @@ package="com.example.usman.newawareness">
     -->
     <application android:allowBackup="true"
         android:hardwareAccelerated="false"
-    android:icon="@drawable/headphone"
+    android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
+        android:screenOrientation="portrait"
     android:roundIcon="@drawable/app_icon"
     android:supportsRtl="true"
         android:largeHeap="true"
@@ -31,23 +32,31 @@ package="com.example.usman.newawareness">
         android:name=".Activities.Activity_Main"
         android:label="@string/app_name"
         android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait"
+
         >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-    <activity android:name=".Activities.Activity_Maps"></activity>
-        <activity android:name=".Activities.Activity_Intro"> </activity>
+    <activity android:name=".Activities.Activity_Maps"
+        android:screenOrientation="portrait"
+        ></activity>
+        <activity android:name=".Activities.Activity_Intro"
+            android:screenOrientation="portrait"
+            > </activity>
 
         <activity android:name=".Activities.Activity_Fence_Selection"
-        android:hardwareAccelerated="false"
-        android:roundIcon="@drawable/app_icon"
-        android:largeHeap="true"
-        android:theme="@style/AppTheme">
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:roundIcon="@drawable/app_icon"
+            android:largeHeap="true"
+            android:theme="@style/AppTheme">
     </activity>
-        <activity android:name=".Activities.Activity_List_Installed_Apps"></activity>
+        <activity android:name=".Activities.Activity_List_Installed_Apps"
+            android:screenOrientation="portrait"
+            ></activity>
 
         <meta-data
             android:name="com.google.android.awareness.API_KEY"
